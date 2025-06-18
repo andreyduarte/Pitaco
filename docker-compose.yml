@@ -4,7 +4,7 @@ services:
   pitaco-app:
     build: .
     ports:
-      - "5000:5000"
+      - "8080:8080"
     environment:
       - GEMINI_API_KEY=${GEMINI_API_KEY}
     volumes:
