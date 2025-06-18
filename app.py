@@ -5,6 +5,10 @@ from database import init_db, close_db, add_notification
 
 app = Flask(__name__)
 
+@app.route('/')
+def hello():
+    return 'Hello, World!', 200
+
 @app.route('/send', methods=['POST'])
 def webhook():
     """
